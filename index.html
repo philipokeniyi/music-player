@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Music Player</title>
+    <link rel="stylesheet" href="mp.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <!-- top -->
+            <div class="player-bar">
+                <div class="parallel-lines">
+                <div> </div>
+                <div> </div>
+                </div>
+            <h1 class="fcc-title">16Music.com</h1>
+            <div class="parallel-lines">
+                <div> </div>
+                <div> </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="player-content">
+            <!-- picture art -->
+            <div id="player-album-art">
+            <img src="kk.jpg" alt="song cover art">
+        </div>
+        <!-- display -->
+        <div class="player-display">
+            <div class="player-display-song-artist">
+                <p id="player-song-title"></p>
+                <p id="player-song-artist"></p>
+            </div>
+            <!-- buttons -->
+            <div class="player-buttons">
+                <button id="previous" class="previous" aria-label="Previous"><i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play" class="play" aria-label="play"><i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause" class="pause" aria-label="Pause">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="next" class="next" aria-label="Next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button id="shuffle" class="shuffle" aria-label="Shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- playlist -->
+    <div class="playlist">
+        <div class="playlist-bar">
+            <div class="parallel-lines">
+                <div></div>
+                <div></div>
+            </div>
+            <h2 class="playlist-title" id="playlist">Playlist</h2>
+            <div class="parallel-lines">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <ul id="playlist-songs"></ul>
+    </div>
+</div>
+<script src="mp.js"></script>
+</body>
+</html>
